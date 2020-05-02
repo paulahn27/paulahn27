@@ -1,5 +1,10 @@
 body    {
-    background-color: wheat;
+    background-image: url("blue background.jpg");
+
+}
+
+img{
+    opacity: 0.5;
 }
 
 h1  {
