@@ -4,7 +4,50 @@
 <title>Prototyping CSS</title>
 <link rel='stylesheet' type='text/css' href='External2.css'>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .lists{
     background-color: papayawhip;
     margin: 20px;
@@ -99,6 +142,62 @@ body,h1,h2,h3 {
 
 </div>
 
+<div class="lists">
+
+    <table border="1" cellpadding="6" style="width:400px">
+        <tr>
+            <th>Useful Shortcut Keys:</th>
+            <td>Operating System</td>
+        </tr>
+    <!--Added a rowspan to show the different shortcut commands for MAC and Windows-->
+        <tr>
+          <th rowspan="2"><strong>Mask with Shape</strong></th>
+          <td>MAC: <span style="color:chocolate">Cmd + Shift + M</span></td>
+        </tr>
+        <tr>
+            <td>Windows: <span style="color:chocolate">Ctrl + Shift + M</span></td>
+        </tr>
+        
+        <tr>
+            <th rowspan="2"><strong>Bring to Front</strong></th>
+            <td>MAC: <span style="color:chocolate">Cmd + Shift + ]</span></td>
+          </tr>
+          <tr>
+              <td>Windows: <span style="color:chocolate">Ctrl + Shift + ]</span></td>
+          </tr>
+    
+          <tr>
+            <th rowspan="2"><strong>Bring to Back</strong></th>
+            <td>MAC: <span style="color:chocolate">Cmd + Shift + [</span></td>
+          </tr>
+          <tr>
+              <td>Windows: <span style="color:chocolate">Ctrl + Shift + [</span></td>
+          </tr>
+    
+          <tr>
+            <th rowspan="2"><strong>Duplicate</strong></th>
+            <td>MAC: <span style="color:chocolate">Cmd + D</span></td>
+          </tr>
+          <tr>
+              <td>Windows: <span style="color:chocolate">Ctrl + D</span></td>
+          </tr>
+    
+    </table>
+    <br>
+    <hr>
+    <br>
+
+</div>
+
+<h2>Final Product</h2>
+<p>Hover over the image to see a cool effect.</p>
+
+<div class="container">
+  <img src="Neumorphic.jpg" alt="Neumorphic" class="image">
+  <div class="overlay">
+    <div class="text"> WOAH! </div>
+  </div>
+</div>
 
 
 </body>
