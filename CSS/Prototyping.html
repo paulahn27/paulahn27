@@ -6,10 +6,24 @@
 
 <style>
 .lists{
-    color: orange;
+    background-color: papayawhip;
     margin: 20px;
     padding: 20px;
 }
+
+#headers{
+    color:orange;
+    padding: 20px;
+    text-align: center;
+
+}
+
+body{
+
+    background-image: url("water.JPG");
+
+}
+
 </style>
 
 </head>
@@ -26,7 +40,7 @@
 
 <div class="lists">
 
-<h2>How to create a pushed out Neumorphic circle</h2>
+<h2 id="headers">How to create a pushed out Neumorphic circle</h2>
     <ol>
         <li>Press <q>R</q> and hold <q>Shift</q> while dragging the corner of the rectangle to create a simple square. </li>
         <li>Set the border radius of the square to 100 to make it a circle.</li>
@@ -45,28 +59,28 @@
 
 <div class="lists">
 
-    <p>
-        <h2>How to create a pushed in Neumorphic circle</h2>
-            <ol>
-                <li>Make a circle and add a black border of size 5 under the “Appearance” option</li>
-                <li>Adjust the object blur of the circle to 5 and name the circle “Dark”</li>
-                <li>Duplicate the “Dark” circle and name it “Light.”</li>
-                <li>Position the light circle off to the side and make the border color white and add an object blur of 5.</li>
-                <li>Duplicate the dark circle again and position it off to the side. Name the circle “Mask.”</li>
-                <li>Right click the mask circle and under the “Arrange” option click “Bring to Front.”</li>
-                <li>Position all the elements directly on top of each other.</li>
-                <li>Move the light circle more towards the top left of the other two circles</li>
-                <li>Select all elements and right click to mask with shape.</li>
-                <li>Adjust the Opacity, Object Blur, and Border Size of Color of all the elements until satisfied.</li>
+<p>
+    <h2 id="headers">How to create a pushed in Neumorphic circle</h2>
+        <ol>
+            <li>Make a circle and add a black border of size 5 under the “Appearance” option</li>
+            <li>Adjust the object blur of the circle to 5 and name the circle “Dark”</li>
+            <li>Duplicate the “Dark” circle and name it “Light.”</li>
+            <li>Position the light circle off to the side and make the border color white and add an object blur of 5.</li>
+            <li>Duplicate the dark circle again and position it off to the side. Name the circle “Mask.”</li>
+            <li>Right click the mask circle and under the “Arrange” option click “Bring to Front.”</li>
+            <li>Position all the elements directly on top of each other.</li>
+            <li>Move the light circle more towards the top left of the other two circles</li>
+            <li>Select all elements and right click to mask with shape.</li>
+            <li>Adjust the Opacity, Object Blur, and Border Size of Color of all the elements until satisfied.</li>
         </ol>
-        </p>
+</p>
     
 </div>
 
 <div class="lists">
 
     <p>
-        <h2>Prototyping</h2>
+        <h2 id="headers">Prototyping</h2>
         <ul>
             <li>Link the pushed out neumorphic button on artboard 1 to artboard 2 containing the pushed in neumorphic button.</li>
             <li>For the Trigger select <q>Tap</q>.</li>
