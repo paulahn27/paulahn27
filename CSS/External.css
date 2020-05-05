@@ -1,13 +1,8 @@
 body    {
-    background-image: url("water.jpg");
+    background-image: url("water.JPG");
 
 }
 
-img{
-    opacity: 0.5;
-}
-
-h1  {
-    color:rgb(253, 188, 144);
-    text-align:center;
+body,h1,h2,h3 {
+    font-family: "Karma", sans-serif
 }
