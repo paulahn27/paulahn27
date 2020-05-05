@@ -4,6 +4,8 @@
 <title>Neumorphism CSS</title>
 <link rel='stylesheet' type='text/css' href='External2.css'>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style> 
 
 #rcorners1 {
@@ -33,6 +35,48 @@
 body,h1,h2,h3 {
     font-family: "Karma", sans-serif
 }
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+display: block;
+margin-left: 50%;
+width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 50%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(143, 233, 255, 0.829);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 </style>
 </head>
@@ -161,15 +205,22 @@ body,h1,h2,h3 {
 
 </div>
 
+
 <div id="rcorners1">
 
-<h2 id="headers">Final Product</h2>
-
-<div class="center">
-    <p><strong>Hover over the image to see a cool effect.</strong></p>
-</div>
-
-
+    <h2 id="headers">Final Product</h2>
+    
+    <div class="center">
+        <p><strong>Hover over the image to see a cool effect.</strong></p>
+    </div>
+    
+    <div class="container">
+      <img src="Neumorphic.jpg" alt="Neumorphic" class="image">
+      <div class="overlay">
+        <div class="text"> WOAH! </div>
+      </div>
+    </div>
+    
 </div>
 
 </body>
