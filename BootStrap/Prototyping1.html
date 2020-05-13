@@ -2,6 +2,36 @@
 <html>
 <head>
 <title>Neumorphism Bootstrap</title>
+<style>
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rcorners1 {
+    border-radius: 25px;
+    background: papayawhip;
+    padding: 20px; 
+    width: 40%;
+    height: 100%; 
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right:auto;
+  
+}
+
+    /*changes the style of headers with the "headers" class*/
+.headers  {
+    color:orange;
+    padding: 10px;
+    text-align: center;
+      
+}
+
+
+</style>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,20 +73,87 @@
       </nav>
       <br>
         
-      <div class="container">
-        <h3>Navbar With Dropdown</h3>
-        <p>This example adds a dropdown menu in the navbar.</p>
-      </div>
+      <div class="rcorners1">
 
-      <div class="d-flex justify-content-around bg-secondary mb-3">
-        <div class="p-2 bg-light flex-fill">
-            <img src="harambe.jpg" class="float-left">
-        </div>
-        <div class="p-2 bg-light flex-fill">
-            <img src="harambe.jpg" class="float-right">
+        <div class="container">
+          <h2 class="headers">More Examples!</h2>
+          <br>
+  
+        <div class="container-fluid">
+         
+          <div class="row">
+            <div class="col" style="background-color:rgb(255, 222, 168);">
+            <img src="Neumorphic.jpg" width="200" height="400" class="center">
+            </div>
+            <div class="col" style="background-color:rgb(255, 205, 124);">
+            <img src="Neumorphic.jpg" width="200" height="400" class="center">
+            </div>
+            <div class="col" style="background-color:rgb(255, 183, 68);">
+            <img src="Neumorphic.jpg" width="200" height="400" class="center">
+            </div>
+          </div>
         </div>
       </div>
-      
+    </div>
 
+      <div class="rcorners1">
+
+          <h2 class="headers">Shortcut Keys</h2>  
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Command</th>
+                <th>MAC</th>
+                <th>Windows</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mask with Shape</td>
+                <td><code>Cmd + Shift + M</code></td>
+                <td><code>Ctrl + Shift + M</code></td>
+              </tr>
+              <tr>
+                <td>Bring to Front</td>
+                <td><code>Cmd + Shift + ]</code></td>
+                <td><code>Ctrl + Shift + ]</code></td>
+              </tr>
+              <tr>
+                <td>Bring to Back</td>
+                <td><code>Cmd + Shift + [</code></td>
+                <td><code>Ctrl + Shift + [</code></td>
+              </tr>
+              <tr>
+                <td>Duplicate</td>
+                <td><code>Cmd + D</code></td>
+                <td><code>Ctrl + D</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="rcorners1">
+
+        <h2 class="headers">Buttons</h2>
+          <p>This doesn't relate to the rest of my website, but let's make some different-sized spinning buttons using <code>Bootstrap</code> just for fun!</p>
+          <div class="center">
+            <button class="btn btn-secondary btn-sm">
+              <span class="spinner-border spinner-border-sm"></span>
+              Small..
+            </button>
+  
+            <button class="btn btn-secondary">
+              <span class="spinner-border spinner-border-sm"></span>
+              Medium..
+            </button>
+  
+            <button class="btn btn-secondary btn-lg">
+              <span class="spinner-border spinner-border-sm"></span>
+              Large..
+            </button>  
+          </div>
+        </div>
+
+    
 </body>
 </html>
