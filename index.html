@@ -3,29 +3,65 @@
     <head>
      <!-- I (manal) added this so that each of the headings could stand out with a different font-->
      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
      <style> 
         h1 {
           font-style: oblique;
         }
 
-        .backgroundimage{
-        background-image: url("water.JPG");
 
-        }
         </style>
+        
 
         <!--varun: added style sheet-->
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Team 5</title>    
+        
     </head>
     
     <body>
-        <h1><u>Team 5's Page</u></h1>
+      <!--inserted a navbar at the top of our page, feel free to make edits! - Paul-->
+      <nav class="navbar navbar-expand-md navbar-light" style="background-color: rgb(255, 161, 94);">
+      <!--inserted a picture of harambe as our "brand"-->
+        <a class="navbar-brand" href="#">
+            <img src="harambe.jpg" alt="Logo" style="height:50px">
+        </a>
+      
+        <!-- inserted links to our HTML and CSS webpages -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://jvannac.github.io/index.html"><strong>HTML</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://varunadarajah.github.io/index.html"><strong>CSS</strong></a>
+          </li>
+      
+          <!-- inserted a dropdown menu with links -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><strong>Link 1</strong></a>
+              <a class="dropdown-item" href="#"><strong>Link 2</strong></a>
+              <a class="dropdown-item" href="#"><strong>Link 3</strong></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <br>
+      <!--end of navbar-->
+        <h1 class="center" style="font-size: 50px;"><u><strong>Team 5's Page</strong></u></h1>
         <br>
         <br>
 <!--Start of Paul's Section-->
 <!--Added a background image-->
-<div class="backgroundimage">
+<div class="paulbackground">
 <br>
 <br>
 
@@ -110,51 +146,44 @@
 </div>
 
 <div class="rcorners1">
-  <h2 class="headers">Shortcut Keys</h2>
-  <table border="1" cellpadding="6" style="width: 100%" class="center">
+
+  <h2 class="headers">Shortcut Keys</h2>  
+  <table class="table table-striped">
+    <thead>
       <tr>
-          <th>Useful Shortcut Keys:</th>
-          <td>Operating System</td>
+        <th>Command</th>
+        <th>MAC</th>
+        <th>Windows</th>
       </tr>
-  <!--Added a rowspan to show the different shortcut commands for MAC and Windows-->
+    </thead>
+    <tbody>
       <tr>
-        <th rowspan="2"><strong>Mask with Shape</strong></th>
-        <td>MAC: <span style="color:chocolate">Cmd + Shift + M</span></td>
+        <td>Mask with Shape</td>
+        <td><code>Cmd + Shift + M</code></td>
+        <td><code>Ctrl + Shift + M</code></td>
       </tr>
       <tr>
-          <td>Windows: <span style="color:chocolate">Ctrl + Shift + M</span></td>
+        <td>Bring to Front</td>
+        <td><code>Cmd + Shift + ]</code></td>
+        <td><code>Ctrl + Shift + ]</code></td>
       </tr>
-      
       <tr>
-          <th rowspan="2"><strong>Bring to Front</strong></th>
-          <td>MAC: <span style="color:chocolate">Cmd + Shift + ]</span></td>
-        </tr>
-        <tr>
-            <td>Windows: <span style="color:chocolate">Ctrl + Shift + ]</span></td>
-        </tr>
-  
-        <tr>
-          <th rowspan="2"><strong>Bring to Back</strong></th>
-          <td>MAC: <span style="color:chocolate">Cmd + Shift + [</span></td>
-        </tr>
-        <tr>
-            <td>Windows: <span style="color:chocolate">Ctrl + Shift + [</span></td>
-        </tr>
-  
-        <tr>
-          <th rowspan="2"><strong>Duplicate</strong></th>
-          <td>MAC: <span style="color:chocolate">Cmd + D</span></td>
-        </tr>
-        <tr>
-            <td>Windows: <span style="color:chocolate">Ctrl + D</span></td>
-        </tr>
-  
+        <td>Bring to Back</td>
+        <td><code>Cmd + Shift + [</code></td>
+        <td><code>Ctrl + Shift + [</code></td>
+      </tr>
+      <tr>
+        <td>Duplicate</td>
+        <td><code>Cmd + D</code></td>
+        <td><code>Ctrl + D</code></td>
+      </tr>
+    </tbody>
   </table>
+</div>
+
   <br>
   <hr>
   <br>
-
-</div>
 
 
 <div class="rcorners1">
@@ -174,7 +203,52 @@
       <div class="text"> WOAH! </div>
     </div>
   </div>
-  
+</div>
+
+<div class="rcorners1">
+
+  <div class="container-fluid">
+    <h2 class="headers">More Examples!</h2>
+    <br>
+
+  <div class="container-fluid">
+   
+    <div class="row">
+      <div class="col" style="background-color:rgb(255, 222, 168);">
+      <img src="Neumorphic.jpg" width="200" height="600" class="center">
+      </div>
+      <div class="col" style="background-color:rgb(255, 205, 124);">
+      <img src="Neumorphic.jpg" width="200" height="600" class="center">
+      </div>
+      <div class="col" style="background-color:rgb(255, 183, 68);">
+      <img src="Neumorphic.jpg" width="200" height="600" class="center">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="rcorners1">
+
+  <h2 class="headers">Buttons</h2>
+    <p>This doesn't relate to the rest of my website, but let's make some different-sized spinning buttons using <code>Bootstrap</code> just for fun!</p>
+    <div class="center">
+      <button class="btn btn-secondary btn-sm">
+        <span class="spinner-border spinner-border-sm"></span>
+        Small..
+      </button>
+
+      <button class="btn btn-secondary">
+        <span class="spinner-border spinner-border-sm"></span>
+        Medium..
+      </button>
+
+      <button class="btn btn-secondary btn-lg">
+        <span class="spinner-border spinner-border-sm"></span>
+        Large..
+      </button>  
+    </div>
+  </div>
 </div>
 
 <!--Start of Jessica's Section-->

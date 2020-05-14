@@ -42,6 +42,15 @@ body  {
 
 /*Start of styles for Paul's section*/
 
+.paulbackground{
+  background-image: url("orangebackground.jpg");
+  opacity: 0.7;
+  padding-bottom: 5%;
+  padding-top: 5%;
+
+}
+
+
 /*puts content in a box with a border radius of 25px*/
 .rcorners1 {
     border-radius: 25px;
