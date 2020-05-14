@@ -142,76 +142,50 @@ body  {
 /* End of styles for Paul's section*/  
 
 /* Start of manals section*/
+
+/*added the background color to differenciate my section from my other team members and make it stand out*/
 #manalssection  {
    
-    background-color: rgb(252, 184, 252);
+    background-color: rgb(252, 184, 184);
     border: 2px solid black;
     font-family: 'Courier New', Courier, monospace;
-    padding: 10px;
+    padding: 50px;
     widows: 40px;
 }
-
+/*changed the color and created more of a margin-top*/
 #tble {
   border: 1px solid black;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
   margin-right: 0px;
   margin-left: 0px;
-  background-color: slateblue;
+  background-color: rgb(205, 103, 90);
 }
-
-.middle {
+/*centered everything so it looked more put together*/
+.center {
     margin: auto;
     width: 100%;
     font-size: medium;
     text-align: center;
   }
-
-  /* Container needed to position the overlay. Adjust the width as needed */
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
+/*when you hover over the image it will be bolded*/
+  #manalssection img:hover {
+    border: 3px solid black;
+}
+/*changed the font of a specific heading to make it stand out a little more*/
+.sansserif {
+  font-family: "Times New Roman", Times, serif;
+}
+/* paul used this first!! i wanted by link to stand out and the color adds more to my part of the site*/
+.rcorners1 {
+  border-radius: 25px;
+  background: papayawhip;
+  padding: 20px; 
+  width: 40%;
+  height: 100%; 
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right:auto;
 }
 
-/* Make the image to responsive */
-.image {
-  width: 100%;
-  height: auto;
-}
-
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: white;
-}
-
-/* When you mouse over the container, fade in the overlay icon*/
-.container:hover .overlay {
-  opacity: 1;
-}
-
-/* The icon inside the overlay is positioned in the middle vertically and horizontally */
-.icon {
-  color: white;
-  font-size: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* When you move the mouse over the icon, change color */
-.fa-user:hover {
-  color: #eee;
-}
+/* end of manals section/
