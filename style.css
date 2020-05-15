@@ -14,6 +14,7 @@ body  {
 }
 #varunSection h1 {
     text-align: center;
+    font-weight: bold;
 }
 /* styling head row of table differently*/
 #varunSection .tableTitle {
@@ -25,8 +26,6 @@ body  {
     border: 2px solid black;
     font-size: 18px;
     font-style: italic;
-    height: 200px;
-    width: 600px;
     text-align: center;
 }
 #varunSection .sideNote {
@@ -34,6 +33,10 @@ body  {
     font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     padding-top: 0px;
+}
+/* defines max size of image as its using bootstrap img-fluid */
+#varunSection img {
+  max-height: 600px;
 }
 /* gives a border when hovering over harambe */
 #varunSection img:hover {
