@@ -32,14 +32,14 @@ body  {
     /* different font for the side notes*/
     font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
-    padding-top: 0px;
+    padding-top: 10px;
 }
 /* defines max size of image as its using bootstrap img-fluid */
-#varunSection img {
+#varunSection .harambe {
   max-height: 600px;
 }
 /* gives a border when hovering over harambe */
-#varunSection img:hover {
+#varunSection .harambe:hover {
     border: 2px solid black;
 }
 

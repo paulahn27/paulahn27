@@ -425,11 +425,34 @@
     <p>Thank you for reading my section about the great Gorilla. Now finally here is a picture of a gorilla:</p>
 
     <!--image of harambe, scaled to 400 height because it was big-->
+    <div class="col text-center">
     <div title="Harambe">
       <!-- used bootstrap to center and oval harambe, as well as img-fluid for a responsive size-->
-      <img src="harambe.jpg" class="mx-auto d-block rounded-circle img-fluid">
+      <img src="harambe.jpg" class="mx-auto d-block rounded-circle img-fluid harambe">
     </div>
     <p class="sideNote">(Source: <a href="https://www.cincinnati.com/story/news/2016/05/29/who-harambe/85133508/")>Cincinnati.com</a>)</p>
+    
+    <!-- added bootstrap button linked to a modal to popout a picture of harambe -->
+    
+      <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target=".bigHarambe">Harambe Popup</button>
+    </div>
+    
+    <!-- harambe modal-->
+    <div class="modal fade bigHarambe" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Harambe</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="harambe.jpg" class="mx-auto d-block rounded img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 
 <!--Start of Manal's Section-->
