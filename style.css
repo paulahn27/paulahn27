@@ -167,11 +167,11 @@ body  {
 /*changed the color and created more of a margin-top*/
 #tble {
   border: 1px solid black;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 0px;
   margin-left: 0px;
-  background-color: rgb(205, 103, 90);
+  background-color:lightseagreen
 }
 /*centered everything so it looked more put together*/
 .center {
@@ -189,15 +189,22 @@ body  {
   font-family: "Times New Roman", Times, serif;
 }
 /* paul used this first!! i wanted by link to stand out and the color adds more to my part of the site*/
-.rcorners1 {
+.h1 {
+  border: 5px solid rgb(0, 17, 255);
+}
+#rcorners2 {
   border-radius: 25px;
-  background: papayawhip;
+  border: 2px solid rgb(33, 173, 143);
   padding: 20px; 
-  width: 40%;
-  height: 100%; 
-  margin-bottom: 100px;
-  margin-left: auto;
-  margin-right:auto;
+  width: 200px;
+  height: 150px;  
 }
 
+.manalsbackground{
+  background-image: url("https://ih1.redbubble.net/image.849648732.9971/flat,750x,075,f-pad,750x1000,f8f8f8.jpg");
+  opacity: 0.7;
+  padding-bottom: 5%;
+  padding-top: 5%;
+
+}
 /* end of manals section/
