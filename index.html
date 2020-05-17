@@ -28,7 +28,8 @@
     
     <body>
       <!--inserted a navbar at the top of our page, feel free to make edits! - Paul-->
-      <nav class="navbar navbar-expand-md navbar-light" style="background-color: rgb(255, 161, 94);">
+      <!-- varun: added "sticky-top" to make navbar persistant when scrolling-->
+      <nav class="navbar sticky-top navbar-expand-md navbar-light" style="background-color: rgb(255, 161, 94);">
       <!--inserted a picture of harambe as our "brand" - Paul-->
         <a class="navbar-brand" href="#">
             <img src="harambe_logo.jpg" alt="Logo" style="height:50px">
@@ -53,7 +54,7 @@
               <a class="dropdown-item" href="#"><strong>Paul</strong></a>
               <a class="dropdown-item" href="#"><strong>Jessica</strong></a>
               <a class="dropdown-item" href="#varunSection"><strong>Varun</strong></a>
-              <a class="dropdown-item" href="#"><strong>Manal</strong></a>
+              <a class="dropdown-item" href="#manalssection"><strong>Manal</strong></a>
             </div>
           </li>
         </ul>
@@ -371,7 +372,8 @@
     <!--added breaks and line to differentiate sections-->
     <br><br>
     <!--div to mark off my section-->
-    <div id="varunSection">
+    <!-- made my section a bootstrap container in the page-->
+    <div id="varunSection" class="container-md">
 
     <h1 style="color:rgb(50, 119, 53)">Varun's Section</h1>
     
@@ -395,19 +397,24 @@
     <p>These two species are further divided into different sub-species, outlined in the table below.</p>
     
     <!--table for the subspecies-->
-    <table>
-      <tr class="tableTitle">
-        <th>Eastern Gorillas</th>
-        <th>Western Gorillas</th>
-      </tr>
-      <tr>
-        <td>Mountain Gorilla</td>
-        <td>Western lowland gorilla</td>
-      </tr>
-      <tr>
-        <td>Eastern lowland gorilla</td>
-        <td>Cross River gorilla</td>
-      </tr>
+    <!-- made it a bootstrap table, now it scales within section-->
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr class="tableTitle">
+          <th>Eastern Gorillas</th>
+          <th>Western Gorillas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mountain Gorilla</td>
+          <td>Western lowland gorilla</td>
+        </tr>
+        <tr>
+          <td>Eastern lowland gorilla</td>
+          <td>Cross River gorilla</td>
+        </tr>
+      </tbody>
     </table>
     <!--italicized fun fact-->
     <em class="sideNote">Fun fact: The scientific name for the Western Gorilla is "Gorilla gorilla", and the scientific name for the Western lowland gorilla is "Gorilla gorilla gorilla".</em>
@@ -418,10 +425,34 @@
     <p>Thank you for reading my section about the great Gorilla. Now finally here is a picture of a gorilla:</p>
 
     <!--image of harambe, scaled to 400 height because it was big-->
-    <div title="Harambe">
-      <img src="harambe.jpg" height="400">
+    <div class="col text-center">
+      <div title="Harambe">
+        <!-- used bootstrap to center and oval harambe, as well as img-fluid for a responsive size-->
+        <img src="harambe.jpg" class="mx-auto d-block rounded-circle img-fluid harambe">
+      </div>
+      <p class="sideNote">(Source: <a href="https://www.cincinnati.com/story/news/2016/05/29/who-harambe/85133508/">Cincinnati.com</a>)</p>
+    
+      <!-- added bootstrap button linked to a modal to popout a picture of harambe -->
+    
+      <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target=".bigHarambe">Harambe Popup</button>
     </div>
-    <p class="sideNote">(Source: <a href="https://www.cincinnati.com/story/news/2016/05/29/who-harambe/85133508/")>Cincinnati.com</a>)</p>
+    
+    <!-- harambe modal-->
+    <div class="modal fade bigHarambe" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Harambe</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="harambe.jpg" class="mx-auto d-block rounded img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 
 <!--Start of Manal's Section-->
