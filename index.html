@@ -22,6 +22,21 @@
           width: 100%;
         }
 
+        .flexycontainer {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+
+        }
+
+        .flexy {
+          min-width: 100px;
+          max-width: 250px;
+        }
+
+        .flexy img {
+          width: 100%;
+        }
         </style>
         
         <!--varun: added style sheet-->
@@ -223,40 +238,52 @@
 
 <div class="rcorners1">
 
+  <h2 class="headers">More Examples!</h2>
+  <br>
+ 
   <div class="container-fluid">
-    <h2 class="headers">More Examples!</h2>
-    <br>
-
-  <div class="container-fluid">
+    <div class="row">
+      <div class="col paulcol" style="background-color:rgb(255, 222, 168);">
+        <img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons">
+      </div>
+      <div class="col paulcol" style="background-color:rgb(255, 205, 124);">
+        <img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons">
+      </div>
+      <div class="col paulcol" style="background-color:rgb(255, 183, 68);">
+       <img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons">
+      </div>
+    </div>
    
     <div class="row">
       <div class="col paulcol" style="background-color:rgb(255, 222, 168);">
-        <img src="Neumorphic.jpg" class="center">
+        <img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons">
       </div>
       <div class="col paulcol" style="background-color:rgb(255, 205, 124);">
-        <img src="Neumorphic.jpg" class="center">
+        <img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons">
       </div>
       <div class="col paulcol" style="background-color:rgb(255, 183, 68);">
-       <img src="Neumorphic.jpg" class="center">
+       <img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons">
       </div>
     </div>
-  </div>
-  <div class="container-fluid">
-   
-    <div class="row">
-      <div class="col paulcol" style="background-color:rgb(255, 222, 168);">
-        <img src="Neumorphic.jpg" class="center">
-      </div>
-      <div class="col paulcol" style="background-color:rgb(255, 205, 124);">
-        <img src="Neumorphic.jpg" class="center">
-      </div>
-      <div class="col paulcol" style="background-color:rgb(255, 183, 68);">
-       <img src="Neumorphic.jpg" class="center">
-      </div>
-    </div>
-  </div>
 
+  </div>
 </div>
+
+<div class="rcorners1">
+
+  <h2>Flex container with flexboxes!</h2>
+
+  <div class="flexycontainer">
+    <div class="flexy"><img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons"></div>
+    <div class="flexy"><img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons"></div>
+    <div class="flexy"><img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons"></div>
+    <div class="flexy"><img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons"></div>
+    <div class="flexy"><img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons"></div>
+    <div class="flexy"><img src="Neumorphic.jpg" alt="neumorphic example saying hello world with up and down buttons"></div>
+  </div>
+
+
+
 </div>
 
 <!--Added a box with buttons styled with Bootstrap-->
@@ -290,7 +317,7 @@
 
 <!--Added a different font color to distinguish where Jessica's section starts-->
 <div style="color:rgb(24, 156, 117)">
-<h1>Jessica's Section</h1>
+  <h1>Jessica's Section</h1>
 </div>
 <p>For my portion of the HTML website, I decided to make a page on HTML color codes and how to use them in text, using all the required HTML tags for the assignment.</p>
 
