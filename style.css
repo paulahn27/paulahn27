@@ -62,12 +62,13 @@ body  {
 }
 
 
+
 /*puts content in a box with a border radius of 25px*/
 .rcorners1 {
     border-radius: 25px;
     background: papayawhip;
     padding: 20px; 
-    width: 60%;
+    width: 80%;
     height: 100%; 
     margin-bottom: 100px;
     margin-left: auto;
