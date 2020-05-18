@@ -45,6 +45,16 @@ body  {
 
 /*Start of styles for Paul's section*/
 
+.paulSection  {
+   
+  background-color: rgb(255, 182, 140);
+  border: 5px solid rgb(255, 88, 88);
+  font-family: 'Karma' ;
+  padding:100px;
+  border-radius: 30px;
+ 
+}
+
 .paulbackground{
   background-image: url("orangebackground.jpg");
   opacity: 0.7;
