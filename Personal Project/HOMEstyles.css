@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    background-image: url(FitnessBackground.jpg);
 }
         
 ul {
@@ -9,7 +10,8 @@ ul {
     margin: 0;
     padding: 0;
     width: 15%;
-    background-color: #464C6E;
+    background-color: rgb(173, 153, 114);
+    opacity: 75%;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -27,13 +29,13 @@ li a {
 }
         
 li a.active {
-    background-color: #007991;
+    background-color: #caa94e;
     color: white;
     padding-bottom: 65px;
 }
         
 li a:hover:not(.active) {
-    background-color: rgb(122, 190, 211);
+    background-color: rgb(226, 191, 114);
     color: white;
     padding-bottom: 65px;
 }
@@ -48,15 +50,18 @@ li a:hover:not(.active) {
 .rcorners1 {
     border-radius: 25px;
     background: papayawhip;
-    padding: 20px; 
+    padding: 20px 20px 20px 50px; 
     width: 60%;
     height: 100%; 
     margin-bottom: 100px;
     margin-left: 20%;
     margin-right:auto;
+
   
   }
 
+
+  /*made a second div box so that I could have two boxes in a row */
   .rcorners2 {
 
     border-radius: 25px;
@@ -112,16 +117,33 @@ li a:hover:not(.active) {
 
   /* end of two boxes in a row */
 
+
+  /* Start of font and header changes */
+
   .customfont1 {
     font-size: 20px;
   }
 
-  
-  .headers{
-  color:orange;
-  padding: 10px;
-  text-align: center;
-  
+  .welcometext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: orange;
+  }
+
+  .workoutheaders {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: orange;
+
+  }
+
+  .workouttext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: orange;
   }
 
   

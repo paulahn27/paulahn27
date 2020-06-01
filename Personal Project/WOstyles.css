@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    background-image: url(FitnessBackground.jpg);
+}
+        
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: rgb(173, 153, 114);
+    opacity: 75%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+        
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20%;
+}
+        
+li a.active {
+    background-color: #caa94e;
+    color: white;
+    padding-bottom: 65px;
+}
+        
+li a:hover:not(.active) {
+    background-color: rgb(226, 191, 114);
+    color: white;
+    padding-bottom: 65px;
+}
+
+
+.impact {
+    font-family: Impact, Charcoal, sans-serif;
+  }
+
+/* end of styles for sidebar menu*/
+
+.rcorners1 {
+    border-radius: 25px;
+    background: papayawhip;
+    padding: 20px; 
+    width: 60%;
+    height: 100%; 
+    margin-bottom: 100px;
+    margin-left: 20%;
+    margin-right:auto;
+  
+  }
+
+  .rcorners2 {
+
+    border-radius: 25px;
+    background: papayawhip;
+    padding: 20px; 
+    width: 60%;
+    height: 100%; 
+    margin-bottom: 100px;
+    margin-left: 20%;
+    margin-right:auto;
+    column-gap: 50px;
+    column-count: 2;
+  }
+
+.image {
+display: block;
+width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: 67% 67% 
+   }
+   
+   #one {
+    border-radius: 25px;
+    background: papayawhip;
+    box-sizing: border-box;
+    width: 700px;
+    height: 800px;
+    margin:5px;
+    padding:20px;
+   }
+   
+   #two  {
+    border-radius: 25px;
+    background: papayawhip;
+    box-sizing: border-box;
+    width: 700px;
+    height: 800px;
+    margin:5px;
+    padding:20px;
+   }
+
+
+   
+  .center {
+    margin-right: auto;
+    margin-left: 20%;
+  }
+
+  .welcometext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: orange;
+  }
+
+  .workoutheaders {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: orange;
+
+  }
+
+  .workouttext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: rgb(224, 148, 49);
+  }
+
+
+  
