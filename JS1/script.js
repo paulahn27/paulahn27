@@ -1,5 +1,3 @@
-
-//Defining variables for the Panda Clock
 var happypandatime = 7;
 var noon = 12;
 var grumpypandatime = 12;
@@ -20,7 +18,7 @@ var showCurrentTime = function()
     var seconds = currentTime.getSeconds();
     var meridian = "AM";
  
-    // this sets the hours of the current time
+    // Set hours
 	  if (hours >= noon)
 	  {
 		  meridian = "PM";
@@ -30,14 +28,14 @@ var showCurrentTime = function()
 	  {
 		  hours = hours - 12;
 	  }
-
-    // this sets the minutes of the current time
+ 
+    // Set Minutes
     if (minutes < 10)
     {
         minutes = "0" + minutes;
     }
-
-    // this sets the minutes of the current time
+ 
+    // Set Seconds
     if (seconds < 10)
     {
         seconds = "0" + seconds;
@@ -57,7 +55,7 @@ var updateClock = function()
   var image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg";
 
   var timeEventJS = document.getElementById("timeEvent");
-
+  var lolcatImageJS = document.getElementById('lolcatImage');
   
   if (time == partytime)
   {
@@ -82,7 +80,7 @@ var updateClock = function()
 
   console.log(messageText); 
   timeEventJS.innerText = messageText;
-  lolpandaImage.src = image;
+  lolcatImage.src = image;
   
   showCurrentTime();
 };
@@ -116,7 +114,7 @@ partyButton.addEventListener("click", partyEvent);
 partyEvent(); 
 
 
-// Getting the happy panda selector to work, where picture is displayed when current time is selected
+// Activates Wake-Up selector
 var happypandaTimeSelector =  document.getElementById("happypandaTimeSelector");
 
 var happypandaEvent = function()
@@ -127,7 +125,7 @@ var happypandaEvent = function()
 happypandaTimeSelector.addEventListener("change", happypandaEvent);
 
 
-// Getting the grumpy panda selector to work, where picture is displayed when current time is selected
+// Activates grumpypanda selector
 var grumpypandaTimeSelector =  document.getElementById("grumpypandaTimeSelector");
 
 var grumpypandaEvent = function()
@@ -138,7 +136,7 @@ var grumpypandaEvent = function()
 grumpypandaTimeSelector.addEventListener("change", grumpypandaEvent);
 
 
-// Getting the baby panda selector to work, where picture is displayed when current time is selected
+// Activates babypanda-Time selector
 var babypandaTimeSelector =  document.getElementById("babypandaTimeSelector");
 
 var babypandaEvent = function()
