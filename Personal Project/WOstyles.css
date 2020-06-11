@@ -103,15 +103,25 @@ width: 100%;
    }
 
 
-   
+   .welcomeheader {
+    font-family: fantasy, Oldtown;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(194, 168, 119);
+  }
+
   .center {
     margin-right: auto;
     margin-left: 20%;
   }
 
+  .center1 {
+    margin-right: auto;
+    margin-left: 38%;
+  }
   .welcometext {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    font-size: 23px;
     text-align: center;
     color: orange;
   }
